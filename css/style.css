@@ -1,0 +1,212 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/********************************************HEADER-SECTION**********************************************/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#header-logo {
+    height: 24px;
+}
+
+header a {
+    color: white;
+    margin-left: 24px;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+#menu-btn i {
+    font-size: 32px;
+}
+
+#close-btn i {
+    font-size: 32px;
+}
+
+.solid-header {
+    position: fixed;
+    background-color: #c69572;
+    transition: background-color 0.4s ease;
+}
+
+
+
+
+
+
+/********************************************HERO SECTION**********************************************/
+
+
+
+#hero-section {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-logo {
+    width: 256px;
+    
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #41333238;
+    height: 100vh;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+    color: white;
+}
+
+/********************************************INTRO SECTION**********************************************/
+
+#intro-section {
+    background: #eae7de;
+}
+
+.intro-icon {
+    width: 96px;
+}
+.intro-icon:hover {
+    transform: scale(1.1);
+}
+
+/********************************************ABOUT SECTION**********************************************/
+
+#about-bg-1 {
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+
+}
+
+#about-bg-2 {
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 640px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #about-bg-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #41333238;
+    
+}
+}
+
+
+
+
+/********************************************MENU SECTION**********************************************/
+
+#menu-section {
+    background: #eae7de;
+}
+
+/********************************************CONTACT SECTION**********************************************/
+
+#contact-info-bg-1 {
+    background: linear-gradient(to right, #36313782,#36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#contact-info-bg-2 {
+    background-color: #312423a8;
+}
+
+/********************************************MAP SECTION**********************************************/
+#map {
+    height: 480px;
+}
+
+
+/********************************************FOOTER SECTION**********************************************/
+
+footer {
+    background: #312423;
+}
+
+footer a i {
+    font-size: 32px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+    #social-icons{
+        text-align: center !important;
+        margin-top: 8px;
+    }
+}
+
+/********************************************MOBILE MENU**********************************************/
+
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #312423ed;
+    z-index: 2;
+    display: none;
+}
+#mobile-menu a {
+    color: white;
+}
+
+#mobile-menu a:hover {
+    color: rgb (175, 171, 171)
+}
+
+#mobile-menu #close-btn{
+    position: absolute;
+    right: 29px;
+    top: 12px;
+    width: 36px;
+
+}
